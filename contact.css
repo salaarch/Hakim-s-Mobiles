@@ -1,0 +1,157 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0e0e;
+    color: #110d0d;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar .logo h1 {
+    color: #181212;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #080707;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #0c0707; /* Hover effect color */
+  }
+  
+  /* Contact Section styles */
+  .contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0f0c0c;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .contact-content p {
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #110f0f;
+    border-radius: 4px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #ffffff;
+    color: #141212;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1d1717;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #fafafa;
+    color: #181717;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #0e0c0c;
+    text-decoration: none;
+  }
+  
+  /* Responsive design for mobile */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .nav-links {
+      width: 100%;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    
+    .nav-links li {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+    
+    .contact-section {
+      padding: 20px 10px;
+    }
+    
+    .contact-content {
+      padding: 0 10px;
+    }
+  }
+  
